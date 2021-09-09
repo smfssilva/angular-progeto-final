@@ -3,6 +3,7 @@ import { Routes, RouterModule } from "@angular/router";
 
 import { DashboardRoutes } from './dashboard/dashboard-routing.module';
 import { CalculadoraRoutes } from './calculadora/calculadora-routing.module';
+import { ConversorRoutes } from './conversor/conversor-rounting.module';
 
 export const routes: Routes = [
   {
@@ -11,7 +12,8 @@ export const routes: Routes = [
     pathMatch: 'full'
   },
   ...DashboardRoutes,
-  ...CalculadoraRoutes
+  ...CalculadoraRoutes,
+  ...ConversorRoutes
 ];
 
 @NgModule({
